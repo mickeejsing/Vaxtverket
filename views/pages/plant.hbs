@@ -1,0 +1,16 @@
+<header id="plantHeader">
+    <div id="layer">
+        <div id="plantInfo">
+            <h1>{{data.name}}</h1>
+            <p>[{{data.latin}}]</p>
+        </div>
+    </div>
+</header>
+<section class="text noHeading">
+    <p>{{data.general}}</p>
+    <form id="addPlant" action="" method="POST">
+        <input type="hidden" name="plantID" value="{{data._id}}">
+        <input type="hidden" name="name" value="{{data.name}}">
+        <input type="submit" value="Lägg till växt">
+    </form>
+</section>

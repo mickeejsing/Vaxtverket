@@ -1,0 +1,25 @@
+<section class="text">
+    <h1>Inställningar</h1>
+    <p>Här kan du ändra och lägga till uppgifter för ditt konto. Du kan bland annat definiera din växtzon för att anpassa dina uppgifter ytterligare.</p>
+</section>
+
+<section class="form">
+    <form action="" method="POST" enctype= "multipart/form-data">
+        <input type="password" name="oldPassword" placeholder="Ange gammalt lösenord">
+        <input type="password" name="newPassword" placeholder="Ange nytt lösenord">
+        <select name="growZone">
+            <option selected disabled>Ange din växtzon</option>
+            <option value="1">Växtzon 1</option>
+            <option value="2">Växtzon 2</option>
+            <option value="3">Växtzon 3</option>
+            <option value="4">Växtzon 4</option>
+            <option value="5">Växtzon 5</option>
+            <option value="6">Växtzon 6</option>
+            <option value="7">Växtzon 7</option>
+            <option value="8">Växtzon 8</option>
+        </select>
+        <input type="file" name="file" class="uploadFile" id="file" accept="image/*">
+        <label for="file" class="profileButton">Ändra profilbild</label>
+        <input type="submit" value="Spara ändringar" class="tenBreak profileButton">
+    </form>
+</section>

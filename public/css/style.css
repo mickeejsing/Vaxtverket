@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@media screen and (max-width: 1500px) {
+  body {
+    background-color: white;
+    margin: 0px; }
+  nav {
+    width: 100%; }
+    nav #navLayer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); }
+    nav #bar {
+      background-color: black;
+      height: 50px;
+      width: 100%; }
+      nav #bar #hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-image: url("../images/icons/hamburgerWhite.png");
+        background-size: cover;
+        background-position: center;
+        float: left; }
+    nav #items {
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+      nav #items a {
+        float: left;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        font-family: "Open Sans", sans-serif;
+        box-sizing: border-box;
+        padding-left: 10px; }
+  .col-6 {
+    width: 50%;
+    float: left; }
+  #pageHeader {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/background.JPG");
+    background-position: center;
+    background-size: cover; }
+    #pageHeader #layer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); }
+      #pageHeader #layer img {
+        height: 200px;
+        display: block;
+        padding-top: 50px;
+        margin: 0 auto; }
+  body .image {
+    height: 300px;
+    overflow: hidden; }
+    body .image img {
+      width: 100%; }
+  body .text {
+    padding: 10px; }
+    body .text p {
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      width: 60%;
+      margin: 0 auto; }
+    body .text h1 {
+      color: black;
+      font-family: "Abril Fatface";
+      text-align: center;
+      font-weight: 100; }
+  body .noHeading {
+    margin-top: 30px; }
+  .form {
+    margin-top: 30px;
+    padding: 10px; }
+    .form input[type=text], .form input[type=password], .form input[type=submit], .form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 14px; }
+  #profileHeader {
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center; }
+    #profileHeader #profileInfo {
+      padding: 50px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5); }
+      #profileHeader #profileInfo #profilePic {
+        border: 1px solid white;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        overflow: hidden;
+        position: relative; }
+        #profileHeader #profileInfo #profilePic img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background-color: white; }
+      #profileHeader #profileInfo #profileText h1 {
+        font-family: "Abril Fatface";
+        font-weight: 100;
+        margin: 0px;
+        text-align: center; }
+      #profileHeader #profileInfo #profileText p {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        margin-top: 0px; }
+  #profileNav #options .option {
+    height: 80px;
+    background-color: white;
+    border-bottom: 0.5px solid grey; }
+    #profileNav #options .option .icon {
+      height: 100%;
+      width: 15%;
+      float: left; }
+      #profileNav #options .option .icon img {
+        height: 30px;
+        padding: 25px;
+        opacity: 0.7; }
+    #profileNav #options .option .link {
+      width: 70%;
+      float: left;
+      font-family: "Open Sans", sans-serif;
+      text-align: left; }
+      #profileNav #options .option .link a {
+        line-height: 80px;
+        text-decoration: none;
+        color: black;
+        padding: 10px; }
+    #profileNav #options .option .arrow {
+      width: 15%;
+      float: left;
+      height: 100%; }
+      #profileNav #options .option .arrow img {
+        height: 30px;
+        padding: 25px;
+        opacity: 0.7; }
+  select {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+    font-size: 14px; }
+  #library {
+    padding: 10px; }
+    #library #plants {
+      margin-top: 20px; }
+      #library #plants ul {
+        padding-inline-start: 20px;
+        columns: 2; }
+        #library #plants ul li {
+          font-family: "Open Sans", sans-serif;
+          line-height: 30px; }
+          #library #plants ul li a {
+            text-decoration: none;
+            color: black; }
+  #plantHeader {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/placeholder.png);
+    background-position: center;
+    background-size: cover; }
+    #plantHeader #layer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #plantHeader #layer #plantInfo {
+        text-align: center; }
+        #plantHeader #layer #plantInfo h1 {
+          color: white;
+          font-size: 45px;
+          margin: 0px; }
+        #plantHeader #layer #plantInfo p {
+          color: white;
+          margin: 0px;
+          margin-top: 5px; }
+  #addPlant {
+    margin-top: 30px; }
+    #addPlant input[type=submit] {
+      margin-top: 30px;
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+      font-family: "Open Sans", sans-serif;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      font-size: 14px; }
+  #myPlants .myPlant {
+    width: 100%; }
+    #myPlants .myPlant .myPlantHeader {
+      height: 60px;
+      padding: 10px;
+      margin: 10px;
+      background-color: #d1ddd0; }
+      #myPlants .myPlant .myPlantHeader .five {
+        float: left;
+        width: 5%;
+        height: 100%; }
+        #myPlants .myPlant .myPlantHeader .five .imgDiv {
+          height: 100%;
+          width: 100%;
+          background-image: url("../images/icons/down.png");
+          background-size: 60%;
+          background-position: center;
+          background-repeat: no-repeat; }
+      #myPlants .myPlant .myPlantHeader .ninety {
+        float: left;
+        width: 90%;
+        height: 100%;
+        display: table; }
+        #myPlants .myPlant .myPlantHeader .ninety .textBox {
+          font-family: "Open Sans", sans-serif;
+          display: table-cell;
+          vertical-align: middle; }
+          #myPlants .myPlant .myPlantHeader .ninety .textBox .heading {
+            font-weight: bold;
+            color: #6f8071;
+            margin: 0px; }
+          #myPlants .myPlant .myPlantHeader .ninety .textBox .latin {
+            color: #6f8071;
+            margin: 0px; }
+    #myPlants .myPlant .myPlantBody {
+      padding: 10px; }
+      #myPlants .myPlant .myPlantBody p {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        color: #6f8071; }
+    #myPlants .myPlant .myPlantTasks {
+      color: #6f8071;
+      padding: 10px; }
+      #myPlants .myPlant .myPlantTasks form .checkboxWrapper {
+        font-family: "Open Sans", sans-serif;
+        color: #6f8071;
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-top: 5px; }
+        #myPlants .myPlant .myPlantTasks form .checkboxWrapper input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-top: 6px; }
+  .hidden {
+    display: none; }
+  .vissible {
+    display: block; }
+  .standardBreak {
+    margin-top: 30px; }
+  .tenBreak {
+    margin-top: 10px; }
+  textarea {
+    display: block; }
+  fieldset {
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    border: 0.5px solid grey; }
+  .fail {
+    width: 100%;
+    background-color: #d89090;
+    height: 50px; }
+    .fail p {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      padding: 0px;
+      margin: 0px;
+      line-height: 50px; }
+  .success {
+    width: 100%;
+    background-color: #a2c6aa;
+    height: 50px; }
+    .success p {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      padding: 0px;
+      margin: 0px;
+      line-height: 50px; }
+  .uploadFile {
+    display: none; }
+  .profileButton {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+    border: none; }
+  .blackBtn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+    border: none; }
+  .layer {
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    position: absolute; }
+    .layer .closeBox {
+      height: 15px;
+      position: absolute;
+      top: 15px;
+      left: 15px; }
+    .layer .welcome {
+      position: absolute;
+      z-index: 1;
+      margin: 5%;
+      width: 80%;
+      text-align: center;
+      background-color: white;
+      padding: 5%; }
+      .layer .welcome p {
+        font-family: "Open Sans", sans-serif; }
+      .layer .welcome h1 {
+        font-family: "Abril Fatface";
+        font-weight: 100;
+        line-height: 40px; }
+  main .mainPost {
+    padding: 20px;
+    background-color: white; }
+    main .mainPost h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 15px; }
+    main .mainPost p {
+      font-family: 'Merriweather', serif; }
+    main .mainPost .date {
+      font-family: 'Merriweather', serif;
+      font-size: 13px;
+      margin-bottom: 20px;
+      line-height: 0px; }
+    main .mainPost .message {
+      font-size: 14px; }
+  .headingCategory {
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #d1ddd0; }
+    .headingCategory p {
+      font-family: 'Merriweather', serif;
+      font-size: 14px;
+      margin-bottom: 25px; }
+    .headingCategory h1 {
+      font-family: "Abril Fatface";
+      font-weight: 100; }
+  #postForm {
+    width: 100%; }
+    #postForm p {
+      font-family: 'Merriweather', serif; }
+    #postForm .formCategory input[type=text], #postForm .formCategory input[type=password], #postForm .formCategory input[type=submit], #postForm .formCategory textarea {
+      border: 1px solid black;
+      font-family: 'Merriweather', serif;
+      color: black;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: 10px; }
+    #postForm .formCategory textarea {
+      height: 150px; }
+    #postForm .formCategory input[type=submit] {
+      background-color: white; }
+  #postBtn {
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto; }
+  .commentForm {
+    padding: 20px; }
+    .commentForm .comment {
+      width: 100%;
+      height: 100px;
+      font-family: 'Merriweather', serif;
+      padding: 10px;
+      box-sizing: border-box; }
+    .commentForm input[type=submit] {
+      width: 100%;
+      padding: 10px;
+      background-color: black;
+      font-family: 'Merriweather', serif;
+      color: white;
+      margin-top: 10px;
+      border: none;
+      box-sizing: border-box; }
+  .commentBox {
+    background-color: #e0c9bd;
+    padding: 20px; }
+    .commentBox .mainH1 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 30px; }
+    .commentBox section {
+      margin-bottom: 20px; }
+    .commentBox h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 15px; }
+    .commentBox .author {
+      font-family: 'Merriweather', serif;
+      font-size: 13px; }
+    .commentBox p {
+      font-family: 'Merriweather', serif; }
+    .commentBox .date {
+      font-family: 'Merriweather', serif;
+      font-size: 13px;
+      margin-bottom: 20px;
+      line-height: 0px; }
+    .commentBox .comment {
+      font-size: 14px; }
+  #cirkle {
+    width: 15px;
+    height: 15px;
+    background-color: #ef8282;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: 25px;
+    z-index: 1;
+    margin-left: 45px; }
+    #cirkle p {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      line-height: 15px;
+      font-size: 10px;
+      font-family: "Open Sans", sans-serif; } }
+
+@media screen and (max-width: 600px) {
+  body .image {
+    height: 250px;
+    overflow: hidden; }
+    body .image img {
+      width: 100%; }
+  body .text {
+    padding: 10px; }
+    body .text p {
+      width: unset;
+      margin: unset; }
+  #profileHeader #profileInfo {
+    padding: 30px; } }

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Växtverket</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Partial views -->
+    {{>nav}}
+    {{>flash}}
+    <main>
+        <div id= "wrapper">
+            {{{body}}}
+        </div>
+    </main>
+    <script src='/js/app.js' type="module"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='/js/socket.js' type="module"></script>
+</body>
+</html>

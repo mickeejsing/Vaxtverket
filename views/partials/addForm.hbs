@@ -1,0 +1,90 @@
+<form action="" method="POST">
+    <input type="text" name="name" placeholder="Ange namn på växten" required> 
+    <input type="text" name="latin" placeholder="Ange latinskt namn" required>
+    <textarea name="general" placeholder="Ange generell information om växten" required></textarea>
+    <input type="text" name="alerts" placeholder="Ange notifikationer tex. 2 3 5 8" required>
+
+    <select id="categories" name="season" required>
+        <option value="" disabled selected>Ange säsong från månad</option>
+        <option value="0">Januari</option>
+        <option value="1">Februari</option>
+        <option value="2">Mars</option>
+        <option value="3">April</option>
+        <option value="4">Maj</option>
+        <option value="5">Juni</option>
+        <option value="6">Juli</option>
+        <option value="7">Augusti</option>
+        <option value="8">September</option>
+        <option value="9">Oktober</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
+
+    <select id="categories" name="season" class="tenBreak" required>
+        <option value="" disabled selected>Ange säsong till månad</option>
+        <option value="0">Januari</option>
+        <option value="1">Februari</option>
+        <option value="2">Mars</option>
+        <option value="3">April</option>
+        <option value="4">Maj</option>
+        <option value="5">Juni</option>
+        <option value="6">Juli</option>
+        <option value="7">Augusti</option>
+        <option value="8">September</option>
+        <option value="9">Oktober</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
+
+    <fieldset>
+            
+        <legend>Vattningar</legend>
+
+        <div class="col-6">
+            <input type="checkbox" id="0" name="water" value="0"><label for="0">Måndag</label><br>
+            <input type="checkbox" id="1" name="water" value="1"><label for="1">Tisdag</label><br>
+            <input type="checkbox" id="2" name="water" value="2"><label for="2">Onsdag</label><br>
+            <input type="checkbox" id="3" name="water" value="3"><label for="3">Torsdag</label><br>
+        </div>
+
+        <div class="col-6">
+            <input type="checkbox" id="4" name="water" value="4"><label for="4">Fredag</label><br>
+            <input type="checkbox" id="5" name="water" value="5"><label for="5">Lördag</label><br>
+            <input type="checkbox" id="6" name="water" value="6"><label for="6">Söndag</label><br>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Förkultivering</legend>
+        <div id="plantStepsCultivate">
+            <textarea name="stepCultivate" placeholder="Steg 1" required></textarea>
+        </div>
+        <input type="submit" id="addCultivate" value="Lägg till ytterligare steg">
+    </fieldset>
+
+    <fieldset>
+        <legend>Omplantering</legend>
+        <div id="plantStepsReplant">
+            <textarea name="stepReplant" placeholder="Steg 1" required></textarea>
+        </div>
+        <input type="submit" id="addReplant" value="Lägg till ytterligare steg">
+    </fieldset>
+
+    <fieldset>
+        <legend>Utplantering</legend>
+        <div id="plantStepsPlantout">
+            <textarea name="stepPlantout" placeholder="Steg 1" required></textarea>
+        </div>
+        <input type="submit" id="addPlantout" value="Lägg till ytterligare steg">
+    </fieldset>
+
+    <fieldset>
+        <legend>Skörd</legend>
+        <div id="plantStepsHarvest">
+            <textarea name="stepHarvest" placeholder="Steg 1" required></textarea>
+        </div>
+        <input type="submit" id="addHarvest" value="Lägg till ytterligare steg">
+    </fieldset>
+
+    <input type="submit" value="Registrera växt" class="tenBreak">
+</form>

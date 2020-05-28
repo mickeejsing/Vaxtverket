@@ -1,0 +1,18 @@
+<nav>
+    <section id="bar">
+        {{#if session.data}}
+            <input type="hidden" id="{{session.data.id}}">
+            <input type="hidden" id="{{session.data.role}}">
+        {{/if}}
+        <div id="hamburger"></div>
+    </section>
+    <section id="items" class="hidden">
+        {{#if session.data}}
+            {{>navItemsOnline}}
+            {{else}}
+            {{>navItemsOffline}}
+        {{/if}}
+        <div id="navLayer">
+        </div>
+    </section>
+</nav>

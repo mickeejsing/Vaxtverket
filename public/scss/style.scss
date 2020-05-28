@@ -1,0 +1,741 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+$headingFont: 'Abril Fatface';
+$paragraphFont: 'Open Sans', sans-serif;
+
+$nature-green: #d1ddd0;
+$nature-green-font-color: #6f8071;
+
+$standardBreak: 30px;
+$tenBreak: 10px;
+
+
+@media screen and (max-width: 1500px) {
+  body {
+    background-color: white;
+    margin: 0px;
+  }
+
+  // Menu
+  nav {
+    width: 100%;
+
+    #navLayer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    #bar {
+      background-color: black;
+      height: 50px;
+      width: 100%;
+
+      #hamburger {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-image: url("../images/icons/hamburgerWhite.png");
+        background-size: cover;
+        background-position: center;
+        float: left;
+      }
+    }
+
+    #items {
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      a {
+        float: left;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        font-family: $paragraphFont;
+        box-sizing: border-box;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  // Columns.
+
+  .col-6 {
+    width: 50%;
+    float: left;
+  }
+
+  #pageHeader {
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/background.JPG");
+    background-position: center;
+    background-size: cover;
+
+    #layer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+
+      img {
+        height: 200px;
+        display: block;
+        padding-top: 50px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+
+  // Images and text.
+  body {
+    .image {
+      height: 300px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      padding: 10px;
+
+      p {
+        color: black;
+        font-family: $paragraphFont;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: black;
+        font-family: $headingFont;
+        text-align: center;
+        font-weight: 100;
+      }
+    }
+
+    .noHeading {
+      margin-top: 30px;
+    }
+  }
+
+  .form {
+
+    margin-top: $standardBreak;
+    padding: 10px;
+
+    input[type=text], input[type=password], input[type=submit], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      font-size: 14px;
+    } 
+  }
+
+  // Profile
+  #profileHeader {
+
+    width: 100%;
+    // Photo by Gero Camp on Unsplash
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    #profileInfo {
+      padding: 50px;
+      color: white;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+
+      // Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      #profilePic {
+        border: 1px solid white;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background-color: white;
+        }
+      }
+
+      #profileText {
+        h1 {
+          font-family: $headingFont;
+          font-weight: 100;
+          margin: 0px;
+          text-align: center;
+        }
+
+        p {
+          font-family: $paragraphFont;
+          text-align: center;
+          margin-top: 0px;
+        }
+      }
+    }
+
+  }
+
+  // Navigation.
+  #profileNav {
+
+    #options {
+      .option {
+
+        height: 80px;
+
+        background-color: white;
+        border-bottom: 0.5px solid grey;
+
+        .icon {
+          height: 100%;
+          width: 15%;
+          float: left;
+            img {
+              height: 30px;
+              padding: 25px;
+              opacity: 0.7;
+            }
+        }
+
+        .link {
+          width: 70%;
+          float: left;
+          font-family: $paragraphFont;
+          text-align: left;
+
+          a {
+            line-height: 80px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+          }
+        }
+
+        .arrow {
+          width: 15%;
+          float: left;
+          height: 100%;
+          
+          img {
+            height: 30px;
+            padding: 25px;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  select {
+    width: 100%;
+    font-family: $paragraphFont;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #library {
+
+    padding: 10px;
+
+    #plants {
+      margin-top: 20px;
+
+      ul {
+
+        padding-inline-start: 20px;
+        columns: 2;
+
+        li {
+          font-family: $paragraphFont;
+          line-height: 30px;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  // Plantpage.
+  #plantHeader {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/placeholder.png);
+    background-position: center;
+    background-size: cover;
+
+    #layer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #plantInfo {
+
+        text-align: center;
+
+        h1 {
+          color: white;
+          font-size: 45px;
+          margin: 0px;
+        }
+
+        p {
+          color: white;
+          margin: 0px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  #addPlant {
+
+    margin-top: 30px;
+  
+    input[type=submit] {
+      margin-top: 30px;
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px;
+      font-family: $paragraphFont;
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      font-size: 14px;
+    }
+  }
+
+  // Added plants.
+  #myPlants {
+    .myPlant {
+
+      width: 100%;
+
+      .myPlantHeader {
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
+        background-color: $nature-green;
+
+        .five {
+          float: left;
+          width: 5%;
+          height: 100%;
+
+          .imgDiv {
+            height: 100%;
+            width: 100%;
+            background-image: url("../images/icons/down.png");
+            background-size: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+        
+        .ninety {
+          float: left;
+          width: 90%;
+          height: 100%;
+          display: table;
+          
+          .textBox {
+            font-family: $paragraphFont;
+            display: table-cell;
+            vertical-align: middle;
+            .heading {
+              font-weight: bold;
+              color: $nature-green-font-color;
+              margin: 0px;
+            }
+
+            .latin {
+              color: $nature-green-font-color;
+              margin: 0px;
+            }
+          }
+        }
+      }
+
+      .myPlantBody {
+        padding: 10px;
+
+        p {
+          font-family: $paragraphFont;
+          text-align: center;
+          color: $nature-green-font-color;
+        }
+      }
+
+      .myPlantTasks {
+        color: $nature-green-font-color;
+        padding: 10px;
+        form {
+          .checkboxWrapper {
+            font-family: $paragraphFont;
+            color: $nature-green-font-color;
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-top: 5px;
+
+            input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin-top: 6px;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  // JS Navigation
+  .hidden {
+    display: none;
+  }
+
+  .vissible {
+    display: block;
+  }
+
+  .standardBreak {
+    margin-top: $standardBreak;
+  }
+
+  .tenBreak {
+    margin-top: $tenBreak;
+  }
+
+  // Writer page
+  textarea {
+    display: block;
+  }
+
+  fieldset {
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    border: 0.5px solid grey;
+  }
+
+  .fail {
+    width: 100%;
+    background-color: #d89090;
+    height: 50px;
+    p {
+      text-align: center;
+      font-family: $paragraphFont;
+      padding: 0px;
+      margin: 0px;
+      line-height: 50px;
+    }
+  }
+
+  .success {
+    width: 100%;
+    background-color: #a2c6aa;
+    height: 50px;
+    p {
+      text-align: center;
+      font-family: $paragraphFont;
+      padding: 0px;
+      margin: 0px;
+      line-height: 50px;
+    }
+  }
+
+  // Profile picture.
+  .uploadFile {
+    display: none;
+  }
+
+  .profileButton {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: $paragraphFont;
+    font-size: 14px;
+    color: white;
+    border: none;
+  }
+
+  .blackBtn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: $paragraphFont;
+    font-size: 14px;
+    color: white;
+    border: none;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    position: absolute;
+
+    .closeBox {
+      height: 15px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+
+    .welcome {
+      position: absolute;
+      z-index: 1;
+      margin: 5%;
+      width: 80%;
+      text-align: center;
+      background-color: white;
+      padding: 5%;
+
+      p {
+        font-family: $paragraphFont;
+      }
+
+      h1 {
+        font-family: $headingFont;
+        font-weight: 100;
+        line-height: 40px;
+      }
+    }
+  }
+
+  // Post forum
+  main {
+    .mainPost {
+      padding: 20px;
+      background-color: white;
+
+      h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 15px;
+      }
+
+      p {
+        font-family: 'Merriweather', serif;
+      }
+
+      .date {
+        font-family: 'Merriweather', serif;
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 0px;
+      }
+
+      .message {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .headingCategory {
+
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: $nature-green;
+
+    p {
+      font-family: 'Merriweather', serif;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-family: $headingFont;
+      font-weight: 100;
+    }
+  }
+
+  #postForm {
+    width: 100%;
+
+    p {
+      font-family: 'Merriweather', serif;
+    }
+    .formCategory {
+      input[type=text], input[type=password], input[type=submit], textarea {
+        border: 1px solid black;
+        font-family: 'Merriweather', serif;
+        color: black;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      
+      textarea {
+        height: 150px;
+      }
+
+      input[type=submit] {
+        background-color: white;
+      }
+    }
+  }
+
+  #postBtn {
+    width: 50%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  // Comment form
+  .commentForm {
+
+    padding: 20px;
+
+    .comment {
+      width: 100%;
+      height: 100px;
+      font-family: 'Merriweather', serif;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      padding: 10px;
+      background-color: black;
+      font-family: 'Merriweather', serif;
+      color: white;
+      margin-top: 10px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+  }
+
+  .commentBox {
+
+    .mainH1 {
+      font-family: 'Merriweather', serif;
+      margin-bottom: 30px; 
+    }
+
+    background-color: #e0c9bd;
+    padding: 20px;
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 15px;
+    }
+
+    .author {
+      font-family: 'Merriweather', serif;
+      font-size: 13px;
+    }
+
+    p {
+      font-family: 'Merriweather', serif;
+    }
+
+    .date {
+      font-family: 'Merriweather', serif;
+      font-size: 13px;
+      margin-bottom: 20px;
+      line-height: 0px;
+    }
+
+    .comment {
+      font-size: 14px;
+    }
+  }
+
+  // Notification cirkle
+
+  #cirkle {
+    width: 15px;
+    height: 15px;
+    background-color: #ef8282;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    margin-top: 25px;
+    z-index: 1;
+    margin-left: 45px;
+    
+    p {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      line-height: 15px;
+      font-size: 10px;
+      font-family: $paragraphFont;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  // Images and text.
+  body {
+    .image {
+      height: 250px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+      }
+    }
+
+    .text {
+      padding: 10px;
+
+      p {
+        width: unset;
+        margin: unset;
+      }
+    }
+  }
+
+  #profileHeader {
+    #profileInfo {
+      padding: 30px;
+    }
+  }
+}

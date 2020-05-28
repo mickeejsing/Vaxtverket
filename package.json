@@ -1,0 +1,56 @@
+{
+  "name": "vaxtverket",
+  "version": "1.0.0",
+  "description": "vaxtverket",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint . || exit 0",
+    "lint:fix": "npx eslint . --fix || exit 0",
+    "scss": "node-sass --watch public/scss -o public/css",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-hbs": "^2.3.0",
+    "express-session": "^1.17.0",
+    "express-socket.io-session": "^1.3.5",
+    "helmet": "^3.21.3",
+    "mongoose": "^5.9.9",
+    "multer": "^1.4.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.0.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.1.2"
+  },
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Vaxtverket is a application for cultivation of plants."
+  },
+  "keywords": [
+    "Plants",
+    "Greens",
+    "Vegetables",
+    "Seeds"
+  ],
+  "author": "Mikael Eriksson",
+  "license": "MIT"
+}

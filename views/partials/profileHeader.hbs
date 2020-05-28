@@ -1,0 +1,15 @@
+<header id="profileHeader">
+    <div id="profileInfo">
+        <div id="profilePic"><img src="{{session.data.image}}" alt="Profilbild"></div>
+        <div id="profileText">
+            {{#if session.data}}
+            <h1>{{session.data.username}}</h1>
+                {{#if session.data.authorized}}
+                    <p>Administratör</p>
+                {{else}}
+                    <p>Växtverkare</p>
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</header>

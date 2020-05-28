@@ -1,0 +1,15 @@
+<section class="text">
+    <h1>Författarsidan</h1>
+    <p>Fyll på med information i databasen här. Fyll i varje nedanstående fält.</p>
+</section>
+
+<section class="form">
+    {{#if data}}
+        <p>{{data.name}}</p>
+        <p>{{data.latin}}</p>
+        <p>{{data.alerts}}</p>
+        <p>{{data.seasons}}</p>
+    {{/if}}
+    
+    {{>addForm}}
+</section>

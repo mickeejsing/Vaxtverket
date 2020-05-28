@@ -1,0 +1,40 @@
+<section class="headingCategory">
+    <h1>{{data.category.category}}</h1>
+    <p>Här hittar du frågor och svar gällande din valda kategori. Du kan även skriva egna inlägg.</p>
+    <div id="postBtn"><p>Skriv inlägg</p></div>
+</section>
+
+{{#if data}}
+{{#each data.posts.categories}}
+    <article class="post">
+
+        <div class="mainPost">
+            <h1>{{this.title}}</h1>
+            <p class="date">{{this.date}}</p>
+            <p class="author"></p>
+            <p class="message">{{this.message}}<br><br>/{{this.author}}</p>
+        </div>
+
+        {{#if this.comments}}
+            <div class="commentBox">
+                <h1 class="mainH1">Kommentarer</h1>
+
+                {{#each this.comments}}
+                    <section>
+                        <h1 class="author">{{this.author}}</h1>
+                        <p class="date">{{this.date}}</p>
+                        <p class="comment">{{this.comment}}</p>
+                    </section>
+                {{/each}}    
+            </div>
+        {{/if}}
+
+        <form class="commentForm" action="" method="post">
+            <textarea class="comment" name="comment" placeholder="Skriv en kommentar här" required=""></textarea>
+            <input type="hidden" name="commentID" value="{{this.id}}">        
+            <input type="submit" value="Kommentera">
+        </form>
+
+    </article>
+{{/each}}    
+{{/if}}

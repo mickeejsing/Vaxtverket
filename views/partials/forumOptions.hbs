@@ -1,0 +1,16 @@
+<section id="profileNav">
+
+    {{#if categories}}
+    {{#each categories.categories}}
+    <div id="options">
+
+        <!-- Icons made by <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        <div class="option">
+            <div class="icon"><img src="/images/icons/{{this.id}}.png"></div>
+            <div class="link"><a href="/forum/category?id={{this.id}}">{{this.category}}</a></div>
+            <div class="arrow"><img src="/images/icons/right.png"></div>
+        </div>
+    </div>
+    {{/each}}    
+    {{/if}}
+</section>

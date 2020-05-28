@@ -1,0 +1,9 @@
+<!-- Partial views -->
+{{>profileHeader}}
+
+{{#if session.data.authorized}}
+    <!-- Partial views -->
+    {{>profileNavAdmin}}
+    {{else}}
+    {{>profileNavUser}}
+{{/if}}

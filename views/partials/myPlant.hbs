@@ -1,0 +1,48 @@
+{{#if plants}}
+{{#each plants}}
+
+<div class="myPlant {{this.state}}">
+    <div class="myPlantHeader">
+        <div class="five"></div>
+
+        <div class="ninety">
+            <div class="textBox">
+                <p class="heading">{{this.name}}</p>
+                <p class="latin">{{#if this.steps}}[{{this.latin}}]{{/if}}{{#unless this.steps}}Du är klar med alla steg.{{/unless}}</p>
+            </div>
+        </div>
+
+        <div class="five"><div class="imgDiv"></div></div>
+    </div>
+    {{#if this.steps}}
+        <div class="togglePlant">
+            <div class="myPlantBody">
+                <p>{{this.general}}</p>
+            </div>
+            <div class="myPlantTasks">
+                <form action="" method="POST">
+                    
+                    {{#each this.steps}}
+                        <label class="checkboxWrapper"> 
+                            {{this}}
+                            <input type="checkbox" required>
+                        </label>
+
+                    {{/each}}
+                    <input type="hidden" name="id" value="{{this._id}}">
+                    <input type="submit" value="Klar med uppgifter" class="blackBtn">
+                </form>
+            </div>
+        </div>
+    {{/if}}
+</div>
+
+{{/each}}    
+{{/if}}
+
+{{#unless plants}}
+<section class="text">
+    <h1>Du har inga växter än</h1>
+    <p>Du har inte lagt till några växter än. För att lägga till växter, klicka på menyn. Välj sedan Biblioteket. Sortera på odlingstid för att hitta den grönsaken som går att odla just nu.</p>
+</section>
+{{/unless}}
