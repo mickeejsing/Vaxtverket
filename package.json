@@ -1,6 +1,9 @@
 {
   "name": "vaxtverket",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.9.1"
+  },
   "description": "vaxtverket",
   "main": "app.js",
   "scripts": {
